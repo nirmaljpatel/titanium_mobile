@@ -27,7 +27,7 @@ description: |
     to allow all connections.
 
     If you wish to re-enable ATS, add the `NSAppTransportSecurity` dict to the `ios plist` section
-    of the `tiapp.xml` file, then add the `NSAllowArbitraryLoads` key and set it to true.
+    of the `tiapp.xml` file, then add the `NSAllowArbitraryLoads` key and set it to false.
 
         <ti:app>
           ...
@@ -36,7 +36,7 @@ description: |
               <dict>
                 <key>NSAppTransportSecurity</key>
                 <dict>
-                  <key>NSAllowsArbitraryLoads</key><true/>
+                  <key>NSAllowsArbitraryLoads</key><false/>
                 </dict>
               </dict>
             </plist>
